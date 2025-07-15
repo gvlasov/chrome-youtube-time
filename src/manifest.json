@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Snip Hotkey",
+  "version": "1.1",
+  "description": "Отмечает два времени на YouTube ролике и выводит snip-команду",
+  "permissions": [
+    "commands",
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "yt-snip": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+E"
+      },
+      "description": "Отметить время / вывести snip"
+    }
+  }
+}
